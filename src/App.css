@@ -8,16 +8,78 @@
   flex-direction: column;
 }
 
-header {
-  height: 20%;
-}
-
 .developerHeading {
   display: flex;
   height: 80%;
-  align-items: end;
+  align-items: flex-end;
+}
+
+.developerHeading h1 {
+  font-family: "DJGross";
+  font-size: 100px;
+  margin-left: 20px;
 }
 
 hr {
   width: 100vw;
+}
+
+h2:first-of-type {
+  font-family: "Empires";
+  font-size: 40px;
+  margin: 10px 0 0 20px;
+}
+
+h3:first-of-type {
+  font-family: "DJGross";
+  font-size: 30px;
+  text-align: center;
+  transform: rotate(-10deg) translate(0px, 50px);
+  margin: 0px;
+  height: 2.5rem;
+}
+
+ #arrowbox > *{
+  display: flex;
+  transform: translateY(-50px) scale(.5) rotate(.5turn) ;
+  margin: 0px;
+  padding: 0px;
+}
+
+#arrowbox {
+  margin: 0px;
+  padding: 0px;
+  flex: 1;
+}
+
+#cantedLineBox {
+display: flex;
+justify-content: flex-end;
+flex: 1;
+}
+
+#lastrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "DJGross";
+  src:
+  local("DJGROSS"),
+  url('./assets/fonts/DJGROSS.ttf')
+}
+
+@font-face {
+  font-family: "Empires";
+  src:
+  local("Empires"),
+  url('./assets/fonts/Empires.otf')
+}
+
+@font-face {
+  font-family: "Network";
+  src:
+  local("Network"),
+  url('./assets/fonts/NetworkFreeVersion.ttf')
 }
