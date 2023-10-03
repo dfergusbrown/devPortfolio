@@ -39,10 +39,22 @@ hr {
   font-family: "Empires";
   font-size: 40px;
   margin: 10px 0 0 20px;
+  margin: 0px;
 }
 
 .navbar-brand {
   scale: 3;
+}
+
+.navbar-scrolled {
+  background-color: black;
+  opacity: .25;
+}
+
+.navbar-scrolled:hover {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
 }
 
 h3:first-of-type {

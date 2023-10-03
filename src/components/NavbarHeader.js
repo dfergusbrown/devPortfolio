@@ -4,6 +4,19 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const NavbarHeader = () => {
 
+
+
+    window.onscroll = function() {
+        const scrolledClass = "navbar-scrolled";
+        const scrollTrigger = 100;
+        // We add pageYOffset for compatibility with IE.
+        if (window.scrollY >= scrollTrigger) {
+          document.getElementsByClassName("navbar")[0].classList.add(scrolledClass);
+        } else {
+          document.getElementsByClassName("navbar")[0].classList.remove(scrolledClass);
+        }
+      };
+
     return (
         <Navbar sticky="top">
             <Container>
