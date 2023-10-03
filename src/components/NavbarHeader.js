@@ -4,8 +4,6 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const NavbarHeader = () => {
 
-
-
     window.onscroll = function() {
         const scrolledClass = "navbar-scrolled";
         const scrollTrigger = 100;
