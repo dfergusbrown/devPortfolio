@@ -6,7 +6,7 @@ const NavbarHeader = () => {
 
     window.onscroll = function() {
         const scrolledClass = "navbar-scrolled";
-        const scrollTrigger = 100;
+        const scrollTrigger = 200;
         if (window.scrollY >= scrollTrigger) {
           document.getElementsByClassName("navbar")[0].classList.add(scrolledClass);
         } else {
@@ -15,8 +15,8 @@ const NavbarHeader = () => {
       };
 
     return (
-        <Navbar sticky="top">
-            <Container>
+        <Navbar sticky="top" className='navbartop'>
+            <Container fluid>
                 <Navbar.Brand>Fergus Brown</Navbar.Brand>
                 <Nav>
                     <Nav.Link href="/">Home</Nav.Link>

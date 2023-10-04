@@ -5,7 +5,62 @@ h2 {
   font-size: 40px;
 }
 
+.parentcontainer {
+  position: relative;
+}
+
+/* Navbar */
+
+.navbartop {
+  background-color: rgba(0,0,0,0);
+  position: absolute;
+  width: 100%;
+}
+
+.navbartop * {
+  color: white;
+}
+
+.navbartop > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+
+.navbar {
+  font-family: "Empires";
+  font-size: 40px;
+  color: white;
+  margin: 10px 0 0 20px;
+  margin: 0px;
+}
+
+span.navbar-brand {
+font-size: 80px;
+text-align: left;
+margin-left: 0px;
+}
+
+.navbar-scrolled {
+  background-color: black;
+  opacity: .25;
+  position: sticky;
+}
+
+.navbar-scrolled:hover {
+  opacity: 1;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
+
+.nav-link.active {
+  color: white !important;
+}
+
 /* Cover Page Text */
+
+
+
 .backgroundCover {
   background-image: url('/src/assets/images/hdwall.jpg');
   background-size: cover;
@@ -14,6 +69,7 @@ h2 {
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding-top: 100px;
 }
 
 .backgroundCover * {
@@ -41,31 +97,6 @@ hr {
   }
 }
 
-.navbar {
-  font-family: "Empires";
-  font-size: 40px;
-  margin: 10px 0 0 20px;
-  margin: 0px;
-}
-
-.navbar-brand {
-  scale: 3;
-}
-
-.navbar-scrolled {
-  background-color: black;
-  opacity: .25;
-}
-
-.navbar-scrolled:hover {
-  opacity: 1;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-}
-
-.nav-link.active {
-  color: white !important;
-}
 
 h3:first-of-type {
   font-family: "DJGross";
@@ -76,7 +107,7 @@ h3:first-of-type {
   height: 2.5rem;
 }
 
- #arrowbox > *{
+ #arrowbox svg{
   display: flex;
   transform: translateY(-50px) scale(.5) rotate(.5turn) ;
   margin: 0px;
@@ -93,6 +124,10 @@ h3:first-of-type {
 display: flex;
 justify-content: flex-end;
 flex: 1;
+}
+
+#cantedLineBox a {
+  text-decoration: none;
 }
 
 /* Projects Section */
