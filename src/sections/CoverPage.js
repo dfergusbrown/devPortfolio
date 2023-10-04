@@ -7,7 +7,7 @@ const CoverPage = () => {
 
     return (
         <div className="backgroundCover">
-            <NavbarHeader sticky="top"/>
+            <NavbarHeader />
             <Row className="developerHeading">
                 <Col><h1>Web Developer</h1></Col>
             </Row>

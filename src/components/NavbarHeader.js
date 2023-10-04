@@ -7,7 +7,6 @@ const NavbarHeader = () => {
     window.onscroll = function() {
         const scrolledClass = "navbar-scrolled";
         const scrollTrigger = 100;
-        // We add pageYOffset for compatibility with IE.
         if (window.scrollY >= scrollTrigger) {
           document.getElementsByClassName("navbar")[0].classList.add(scrolledClass);
         } else {
@@ -22,8 +21,8 @@ const NavbarHeader = () => {
                 <Nav>
                     <Nav.Link href="/">Home</Nav.Link>
                     <Nav.Link href="#Projects">Projects</Nav.Link>
-                    <Nav.Link href="#link">About</Nav.Link>
-                    <Nav.Link href="#link">Contact</Nav.Link>
+                    <Nav.Link href="#aboutMe" id="aboutlink">About</Nav.Link>
+                    <Nav.Link href="#contactMe">Contact</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>
