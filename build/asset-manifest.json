@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.705a27f6.css",
+    "main.js": "/static/js/main.26377f9e.js",
+    "static/js/787.28a6522c.chunk.js": "/static/js/787.28a6522c.chunk.js",
+    "static/media/hdwall.jpg": "/static/media/hdwall.b11dacbf9e91f4374a2e.jpg",
+    "static/media/NetworkFreeVersion.ttf": "/static/media/NetworkFreeVersion.a447837ca55fde716e6c.ttf",
+    "static/media/DJGROSS.ttf": "/static/media/DJGROSS.2e6bccb66c2303763d86.ttf",
+    "static/media/arrow.svg": "/static/media/arrow.27a604239d5e6ea9c00d554d02592b3a.svg",
+    "static/media/Empires.otf": "/static/media/Empires.21bb10e6ce34eb75fa8a.otf",
+    "static/media/Handwritingfont.ttf": "/static/media/Handwritingfont.27e5d026d7ee1ef1fa8e.ttf",
+    "index.html": "/index.html",
+    "main.705a27f6.css.map": "/static/css/main.705a27f6.css.map",
+    "main.26377f9e.js.map": "/static/js/main.26377f9e.js.map",
+    "787.28a6522c.chunk.js.map": "/static/js/787.28a6522c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.705a27f6.css",
+    "static/js/main.26377f9e.js"
+  ]
+}
