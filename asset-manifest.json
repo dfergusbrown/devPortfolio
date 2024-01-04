@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/devPortfolio/static/css/main.7cea68e3.css",
+    "main.js": "/devPortfolio/static/js/main.2ef8ae4d.js",
+    "static/js/787.28a6522c.chunk.js": "/devPortfolio/static/js/787.28a6522c.chunk.js",
+    "static/media/hdwall.jpg": "/devPortfolio/static/media/hdwall.b11dacbf9e91f4374a2e.jpg",
+    "static/media/NetworkFreeVersion.ttf": "/devPortfolio/static/media/NetworkFreeVersion.a447837ca55fde716e6c.ttf",
+    "static/media/DJGROSS.ttf": "/devPortfolio/static/media/DJGROSS.2e6bccb66c2303763d86.ttf",
+    "static/media/arrow.svg": "/devPortfolio/static/media/arrow.27a604239d5e6ea9c00d554d02592b3a.svg",
+    "static/media/Empires.otf": "/devPortfolio/static/media/Empires.21bb10e6ce34eb75fa8a.otf",
+    "static/media/Handwritingfont.ttf": "/devPortfolio/static/media/Handwritingfont.27e5d026d7ee1ef1fa8e.ttf",
+    "index.html": "/devPortfolio/index.html",
+    "main.7cea68e3.css.map": "/devPortfolio/static/css/main.7cea68e3.css.map",
+    "main.2ef8ae4d.js.map": "/devPortfolio/static/js/main.2ef8ae4d.js.map",
+    "787.28a6522c.chunk.js.map": "/devPortfolio/static/js/787.28a6522c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cea68e3.css",
+    "static/js/main.2ef8ae4d.js"
+  ]
+}
