@@ -15,7 +15,13 @@ const Bio = () => {
           foundation in technology, language-learning, and discipline gained
           from military service, <strong>let's connect.</strong>
         </p>
+        <p>In the meantime,</p>
       </article>
+      <div>
+        <a href="#projects" id="redirectLink">
+          <p>Check out my projects</p>
+        </a>
+      </div>
     </section>
   );
 };

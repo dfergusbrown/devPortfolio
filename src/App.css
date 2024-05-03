@@ -3,6 +3,8 @@
   text-align: center;
 }
 
+html { scroll-behavior: smooth; }
+
 body {
   margin: 0px;
 }
@@ -64,12 +66,28 @@ section {
   font-size: 3em;
 }
 
+#redirectLink {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: black;
+  font-size: 1.5em;
+}
+
+#redirectLink:hover {
+  font-size: 1.7em;
+}
+
 /* Projects */
 
 .projects {
   justify-content: space-around;
   position: relative;
   overflow: hidden;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .projects .card {
@@ -78,6 +96,16 @@ section {
   background-color: white;
   color: black;
   border-radius: 5%;
+  display: block;
+  text-decoration: none;
+}
+
+.cardBackground {
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 
 .headingBackground {
