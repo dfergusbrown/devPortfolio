@@ -6,7 +6,12 @@ export const projectData = [
     },
     {
         name: "CDA: Monster Sweeper",
-        techUsed: ["HTML", "CSS", "JavaScript",],
+        techUsed: ["HTML", "CSS", "JavaScript"],
+        purpose: "description"
+    },
+    {
+        name: "Digital Derby",
+        techUsed: ["React", "Tailwind", "Node", "Express", "Mongoose", "MongoDB", "Socket.IO"],
         purpose: "description"
     }
 ]
