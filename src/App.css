@@ -10,11 +10,27 @@ body {
 
 .cover {
   height: 100vh;
+  padding: 20px;
+  background-image: url(/public/mountain-range-sillhouette-code.jpg);
+  background-color: rgba(0, 0, 0, .75);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: luminosity;
+}
+
+.cover h1 {
+  font-family: Rock Salt;
+  font-size: 20vmin;
+  text-align: left;
+}
+
+.cover h2 {
+  font-family: Roboto Mono;
+  font-size: 12vmin;
+  text-align: right;
 }
 
 .cover h1, .cover h2 {
-  font-size: 18vmin;
-  text-align: left;
   margin: 0;
 }
 
@@ -130,4 +146,14 @@ section {
   font-size: 25vw;
   bottom: 5%;
   right: 5%;
+}
+
+@font-face {
+  font-family: Rock Salt;
+  src: url(/src/assets/fonts/Rock_Salt/RockSalt-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto Mono;
+  src: url(/src/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
 }

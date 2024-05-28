@@ -1,0 +1,36 @@
+.modal {
+    width: 200px;
+    border: solid 3px black;
+    background-color: white;
+    border-radius: 2%;
+    padding: 20px 15px;
+    z-index: 1;
+    width: 400px;
+    aspect-ratio: 4/5;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.modal div {
+}
+
+.modal input, .modal textarea {
+    border-radius: 3px;
+    color: white;
+}
+
+.modal input {
+    width: 80%;
+    font-size: 2.5vmin;
+    height: 4vmin;
+}
+
+.modal textarea {
+    width: 90%;
+    font-size: 2vmin;
+    border-radius: 7px;
+}
