@@ -7,7 +7,7 @@ export const projectData = [
         imgsrc: "tavernFinderScreenshot.png"
     },
     {
-        name: "CDA: Monster Sweeper",
+        name: "Monster Sweeper",
         techUsed: ["HTML", "CSS", "JavaScript"],
         purpose: "description",
         url: "https://monster-sweeper.vercel.app/",

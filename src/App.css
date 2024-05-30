@@ -1,5 +1,6 @@
 #root {
   text-align: center;
+  font-family: Roboto Mono;
 }
 
 html { scroll-behavior: smooth; }
@@ -148,10 +149,17 @@ section {
   color: black;
 }
 
+.contactPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .contactPage .sectionHead {
-  font-size: 25vw;
-  bottom: 5%;
-  right: 5%;
+  font-size: 20vh;
+  top: 5%;
+  left: 5%;
+  transform: translate(-30%, 80%) rotate(90deg);
 }
 
 @font-face {

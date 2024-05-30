@@ -5,6 +5,10 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <div className="modal">
       <form>
@@ -29,12 +33,15 @@ const ContactForm = () => {
         <div>
           <textarea
             name="message"
-            rows="15"
+            rows="10"
             cols="40"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Leave a message after the beep..."
           />
+        </div>
+        <div>
+          <button onClick={handleSubmit}>Send</button>
         </div>
       </form>
     </div>
