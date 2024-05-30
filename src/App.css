@@ -106,13 +106,19 @@ section {
 }
 
 .projects .card {
-  height: 250px;
-  width: 200px;
+  height: 25vmax;
+  aspect-ratio: 4/5;
   background-color: white;
   color: black;
   border-radius: 5%;
   display: block;
   text-decoration: none;
+  box-shadow: 20px 20px 18px;
+}
+
+.projects .card:active {
+  transform: translateY(10px);
+  box-shadow: 10px 10px 5px;
 }
 
 .cardBackground {
