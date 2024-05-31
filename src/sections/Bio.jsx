@@ -9,7 +9,7 @@ const Bio = () => {
         <p>
           <span className="standoutTxt">This is me</span>, Fergus Brown--software developer and recent veteran of the US
           Army. As I transition from my job as a linguist, I'm seeking the
-          opportunity to build and create whilst cultivating my growing
+          opportunity to build and create while also cultivating my growing
           skillset. <br/><br/><strong>I'm on the look for opportunities </strong>to contribute to interesting and innovative projects. If
           you're looking for a dedicated and adaptable team member with a strong
           foundation in technology, language-learning, and discipline gained
