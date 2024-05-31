@@ -3,7 +3,7 @@ import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import Typed from "typed.js";
 import backgroundImage from "../assets/images/mountain-range-sillhouette-code.jpg";
 
-const Cover = () => {
+const TypedText = () => {
   const softDev = useRef(null);
   useEffect(() => {
     if (softDev.current) {
@@ -17,9 +17,15 @@ const Cover = () => {
       };
     }
   }, []);
+  
+  return <span ref={softDev} />;
+};
+
+const Cover = () => {
+
   return (
     <div className="cover">
-      <ParallaxBanner style={{height: "100%", objectFit: "cover", objectPosition: "center"}}
+      <ParallaxBanner style={{height: "100%"}}
         layers={[
           {
             children: <img src={backgroundImage} />,
@@ -31,7 +37,7 @@ const Cover = () => {
       >
         <ParallaxBannerLayer>
           <h1>Fergus Brown</h1>
-          <span ref={softDev} />
+          <TypedText />
         </ParallaxBannerLayer>
       </ParallaxBanner>
     </div>

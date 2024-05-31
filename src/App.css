@@ -3,7 +3,12 @@
   font-family: Roboto Mono;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* html { scroll-behavior: smooth; } */
 
 body {
   margin: 0px;
@@ -12,11 +17,7 @@ body {
 .cover {
   height: 150vh;
   background-position: center;
-  /* background-image: url(/public/mountain-range-sillhouette-code.jpg); */
-  /* background-color: rgba(0, 0, 0, .75); */
-}
-.cover::after {
-  background-size: cover;
+  scroll-snap-align: start;
 }
 
 .cover h1 {
@@ -59,6 +60,7 @@ section {
   justify-content: center;
   gap: 20px;
   text-align: right;
+  scroll-snap-align: start;
 }
 
 .bio .sectionHead {
@@ -104,6 +106,7 @@ section {
   overflow: hidden;
   flex-wrap: wrap;
   gap: 20px;
+  scroll-snap-align: start;
 }
 
 .projects .card {
@@ -147,6 +150,7 @@ section {
 .contactPage {
   background-color: white;
   color: black;
+  scroll-snap-align: start;
 }
 
 .contactPage {
