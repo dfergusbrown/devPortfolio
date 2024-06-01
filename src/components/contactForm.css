@@ -1,10 +1,10 @@
-.modal {
+/* .modal {
     border: solid 3px black;
     background-color: white;
     border-radius: 2%;
     padding: 20px 5px;
     z-index: 1;
-}
+} */
 
 .modal form {
     display: flex;
@@ -12,7 +12,7 @@
     gap: 15px;
 }
 
-.modal button {
+/* .modal button {
     padding: 10px 15px;
     border: 3px solid black;
     box-shadow: 3px 4px 4px grey;
@@ -23,9 +23,9 @@
 .modal button:active {
     transform: translateY(2px);
     box-shadow: 1px 1px grey;
-}
+} */
 
-.modal input, .modal textarea {
+/* .modal input, .modal textarea {
     border-radius: 5px;
     color: white;
     padding: 5px;
@@ -36,10 +36,10 @@
 .modal input {
     font-size: 2.5vmin;
     height: 4vmin;
-}
+} */
 
-.modal textarea {
+/* .modal textarea {
     padding: 15px;
     font-size: 2vmin;
     border-radius: 7px;
-}
+} */

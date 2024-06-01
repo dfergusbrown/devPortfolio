@@ -1,50 +1,73 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "./contactForm.css";
+import { Box, Button, FormControl, TextField } from "@mui/material";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
+  emailjs.init({ publicKey: "hYofmJLA_9s5dzJcj" });
+  const form = useRef();
+
   const handleSubmit = (e) => {
-    e.preventDefault()
-  }
+    const formData = {
+      email: email,
+      from_name: name,
+      message: message,
+    };
+    e.preventDefault();
+    console.log(form);
+    emailjs.sendForm("service_m0j4g1f", "template_xgs3u7p", form.current).then(
+      () => {
+        console.log("SUCCESS!");
+      },
+      (error) => {
+        console.log("FAILED...", error);
+      }
+    );
+  };
+
   return (
-    <div className="modal">
-      <form>
-        <div>
-          <input
+    <Box className="modal" sx={{ width: "250px" }}>
+      <form  ref={form}>
+        <FormControl>
+          <TextField
             type="email"
             name="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Your Email"
+            label="Your Email"
+            variant="filled"
+            fullWidth
           />
-        </div>
-        <div>
-          <input
+          <TextField
             type="text"
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="Your Name"
+            label="Your Name"
+            variant="filled"
+            fullWidth
           />
-        </div>
-        <div>
-          <textarea
+          <TextField
             name="message"
-            rows="10"
-            cols="40"
             value={message}
+            multiline
+            rows={4}
             onChange={(e) => setMessage(e.target.value)}
-            placeholder="Leave a message after the beep..."
+            label="Message"
+            variant="filled"
           />
-        </div>
-        <div>
-          <button onClick={handleSubmit}>Send</button>
-        </div>
+          <Box>
+            <Button type="submit" onClick={handleSubmit}>
+              Send
+            </Button>
+          </Box>
+        </FormControl>
       </form>
-    </div>
+    </Box>
   );
 };
 
