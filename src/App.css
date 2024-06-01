@@ -1,41 +1,21 @@
 #root {
   text-align: center;
+  font-family: Roboto Mono;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  overflow-y: scroll;
+  /* scroll-snap-type: y mandatory; */
+}
+
+/* html { scroll-behavior: smooth; } */
 
 body {
   margin: 0px;
 }
 
-.cover {
-  height: 100vh;
-  padding: 20px;
-  background-image: url(/public/mountain-range-sillhouette-code.jpg);
-  background-color: rgba(0, 0, 0, .75);
-  background-position: center;
-  background-size: cover;
-  background-blend-mode: luminosity;
-}
-
-.cover h1 {
-  font-family: Rock Salt;
-  font-size: 20vmin;
-  text-align: left;
-}
-
-.cover h2 {
-  font-family: Roboto Mono;
-  font-size: 12vmin;
-  text-align: right;
-}
-
-.cover h1, .cover h2 {
-  margin: 0;
-}
-
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,106 +28,6 @@ section {
   margin: 0;
 }
 
-/* Bio */
-
-.bio {
-  background-color: white;
-  color: black;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  text-align: right;
-}
-
-.bio .sectionHead {
-  font-size: 30vmin;
-  top: 1%;
-  left: 10%;
-}
-
-.bio article {
-  box-sizing: border-box;
-  width: 50%;
-}
-
-#profilePic {
-  z-index: 1;
-  border: solid 3px black;
-  border-radius: 3px;
-}
-
-.standoutTxt {
-  font-size: 3em;
-}
-
-#redirectLink {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
-#redirectLink:hover {
-  font-size: 1.7em;
-}
-
-/* Projects */
-
-.projects {
-  justify-content: space-around;
-  position: relative;
-  overflow: hidden;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.projects .card {
-  height: 250px;
-  width: 200px;
-  background-color: white;
-  color: black;
-  border-radius: 5%;
-  display: block;
-  text-decoration: none;
-}
-
-.cardBackground {
-  height: 80%;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.headingBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 10%;
-  z-index: -1;
-}
-
-.headingBackground div:nth-child(even) {
-  transform: translateX(-5%);
-}
-
-/* Contact */
-
-.contactPage {
-  background-color: white;
-  color: black;
-}
-
-.contactPage .sectionHead {
-  font-size: 25vw;
-  bottom: 5%;
-  right: 5%;
-}
-
 @font-face {
   font-family: Rock Salt;
   src: url(/src/assets/fonts/Rock_Salt/RockSalt-Regular.ttf);
@@ -156,4 +36,8 @@ section {
 @font-face {
   font-family: Roboto Mono;
   src: url(/src/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+@media (min-width: 320px) {
+  
 }

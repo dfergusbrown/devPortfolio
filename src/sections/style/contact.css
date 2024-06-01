@@ -1,0 +1,31 @@
+/* Contact */
+
+.contactPage {
+  background-color: white;
+  color: black;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 0;
+}
+
+.contactPage .sectionHead {
+  font-size: 22vh;
+  top: 5%;
+  left: 5%;
+  transform: translate(-30%, 80%) rotate(90deg);
+  z-index: 1;
+}
+
+.modal {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
