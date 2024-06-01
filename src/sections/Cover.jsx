@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax";
 import Typed from "typed.js";
 import backgroundImage from "../assets/images/mountain-range-sillhouette-code.jpg";
+import "./style/cover.css"
 
 const TypedText = () => {
   const softDev = useRef(null);

@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactForm from '../components/ContactForm'
 import LinkAvatars from '../components/LinkAvatars'
+import "./style/contact.css"
 
 const ContactPage = () => {
   return (

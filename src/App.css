@@ -14,30 +14,8 @@ body {
   margin: 0px;
 }
 
-.cover {
-  height: 150vh;
-  background-position: center;
-  scroll-snap-align: start;
-}
-
-.cover h1 {
-  font-family: Rock Salt;
-  font-size: 20vmin;
-  text-align: left;
-}
-
-.cover h2 {
-  font-family: Roboto Mono;
-  font-size: 12vmin;
-  text-align: right;
-}
-
-.cover h1, .cover h2 {
-  margin: 0;
-}
-
 section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,122 +28,6 @@ section {
   margin: 0;
 }
 
-/* Bio */
-
-.bio {
-  background-color: white;
-  color: black;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  text-align: right;
-  scroll-snap-align: start;
-}
-
-.bio .sectionHead {
-  font-size: 30vmin;
-  top: 1%;
-  left: 10%;
-}
-
-.bio article {
-  box-sizing: border-box;
-  width: 50%;
-}
-
-#profilePic {
-  z-index: 1;
-  border: solid 3px black;
-  border-radius: 3px;
-}
-
-.standoutTxt {
-  font-size: 3em;
-}
-
-#redirectLink {
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-decoration: none;
-  color: black;
-  font-size: 1.5em;
-}
-
-#redirectLink:hover {
-  font-size: 1.7em;
-}
-
-/* Projects */
-
-.projects {
-  justify-content: space-around;
-  position: relative;
-  overflow: hidden;
-  flex-wrap: wrap;
-  gap: 20px;
-  scroll-snap-align: start;
-}
-
-.projects .card {
-  height: 25vmax;
-  aspect-ratio: 4/5;
-  background-color: white;
-  color: black;
-  border-radius: 5%;
-  display: block;
-  text-decoration: none;
-  box-shadow: 20px 20px 18px;
-}
-
-.projects .card:active {
-  transform: translateY(10px);
-  box-shadow: 10px 10px 5px;
-}
-
-.cardBackground {
-  height: 80%;
-  width: 100%;
-  background-size: cover;
-  border-top-left-radius: 5%;
-  border-top-right-radius: 5%;
-}
-
-.headingBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 10%;
-  z-index: -1;
-}
-
-.headingBackground div:nth-child(even) {
-  transform: translateX(-5%);
-}
-
-/* Contact */
-
-.contactPage {
-  background-color: white;
-  color: black;
-  scroll-snap-align: start;
-}
-
-.contactPage {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.contactPage .sectionHead {
-  font-size: 20vh;
-  top: 5%;
-  left: 5%;
-  transform: translate(-30%, 80%) rotate(90deg);
-}
-
 @font-face {
   font-family: Rock Salt;
   src: url(/src/assets/fonts/Rock_Salt/RockSalt-Regular.ttf);
@@ -174,4 +36,8 @@ section {
 @font-face {
   font-family: Roboto Mono;
   src: url(/src/assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf);
+}
+
+@media (min-width: 320px) {
+  
 }

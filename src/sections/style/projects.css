@@ -1,0 +1,47 @@
+/* Projects */
+
+.projects {
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 20px;
+  scroll-snap-align: start;
+  padding: 60px;
+}
+
+.projects .card {
+  height: 25vmax;
+  aspect-ratio: 4/5;
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+  display: block;
+  text-decoration: none;
+  box-shadow: 20px 20px 18px;
+}
+
+.projects .card:active {
+  transform: translateY(10px);
+  box-shadow: 10px 10px 5px;
+}
+
+.cardBackground {
+  height: 80%;
+  width: 100%;
+  background-size: cover;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+
+.headingBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 10%;
+  z-index: -1;
+}
+
+.headingBackground div:nth-child(even) {
+  transform: translateX(-5%);
+}

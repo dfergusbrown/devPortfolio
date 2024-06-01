@@ -1,0 +1,21 @@
+.cover {
+  height: 150vh;
+  background-position: center;
+  scroll-snap-align: start;
+}
+  
+.cover h1 {
+  font-family: Rock Salt;
+  font-size: 20vmin;
+  text-align: left;
+}
+
+.cover h2 {
+  font-family: Roboto Mono;
+  font-size: 12vmin;
+  text-align: right;
+}
+
+.cover h1, .cover h2 {
+  margin: 0;
+}

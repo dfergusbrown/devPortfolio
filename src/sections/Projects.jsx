@@ -2,6 +2,7 @@ import { useState } from "react";
 import { projectData } from "../data/projectInfo";
 import ProjectBackground from "../components/ProjectBackground";
 import ProjectCard from "../components/ProjectCard";
+import "./style/projects.css"
 
 const Projects = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
