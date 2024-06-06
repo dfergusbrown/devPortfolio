@@ -52,6 +52,11 @@
 
 #redirectLink:hover {
   font-size: 1.7em;
+  font-weight: bold;
+}
+
+#redirectLink:active {
+  transform: translate(-50%, 10px);
 }
 
 @media (min-width: 480px) {
