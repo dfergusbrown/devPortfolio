@@ -9,7 +9,7 @@ const TypedText = () => {
   useEffect(() => {
     if (softDev.current) {
       const typed = new Typed(softDev.current, {
-        strings: ["<h2>Software</h2> <h2>Developer</h2>"],
+        strings: ["<h2>Software</h2> <h2>Engineer</h2>"],
         showCursor: false,
         typeSpeed: 80,
       });

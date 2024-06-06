@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: space-around;
   z-index: 0;
+  box-shadow: 0px 15px 50px -10px rgba(0, 0, 0, 0.5) inset;
 }
 
 .contactPage .sectionHead {
