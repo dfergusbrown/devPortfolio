@@ -37,8 +37,9 @@
 .headingBackground {
   position: absolute;
   top: 0;
-  left: 0;
-  opacity: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 15%;
   z-index: -1;
 }
 
