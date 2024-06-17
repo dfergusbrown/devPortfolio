@@ -3,8 +3,8 @@ export const projectData = [
         name: "Riddle Me This",
         techUsed: ["Django", "Python", "Postgres", "React"],
         description: "Host or participate in a scavenger hunt with your friends or co-workers.  The app uses a machine learning model to recognize images of one of over a thousand categorized items.",
-        url: "https://riddle-me-this-pi.vercel.app/",
-        github: ["https://github.com/joshlogan103/riddle-me-this-frontend", "https://github.com/joshlogan103/riddle-me-this-backend"],
+        url: "https://riddle-me-this-frontend.vercel.app/",
+        github: ["https://github.com/dfergusbrown/riddle-me-this-frontend", "https://github.com/joshlogan103/riddle-me-this-backend"],
         imgsrc: "riddle-me-this-home.png"
     },
     {
